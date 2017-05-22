@@ -1,0 +1,12 @@
+#footer{
+	color: $light;
+	background: $dark-grey;
+	@include padding(1.5rem 0);	
+	text-align: center;
+	.row{
+	    @include outer-container();
+	    p{
+	    	@include margin(0);
+	    }
+	}
+}

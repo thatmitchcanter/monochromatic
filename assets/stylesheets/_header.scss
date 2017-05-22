@@ -1,0 +1,36 @@
+#header{
+    background: $dark-grey;
+    @include media($tablet){
+        text-align: center;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    .row{
+        @include outer-container();
+    }
+    .logo_container{
+    	@include span-columns(4 of 16);
+    	@include media($tablet) {
+	    	@include span-columns(4 of 4);	
+    	}
+    }
+    nav{
+    	@include span-columns(12 of 16);
+    	@include media($tablet) {
+	    	@include span-columns(4 of 4);	
+    	}    	
+        ul{
+            float: right;
+            li{
+                @include margin(0);
+                a{
+                    @include padding(1.9rem 1.2rem);
+                    &:hover{
+                        background: #09F;
+                    }
+                }
+            }
+        }
+    }
+}

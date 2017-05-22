@@ -2,12 +2,19 @@
 @import "neat-helpers";
 
 // Display visual grid
-$visual-grid: true !global;
+$visual-grid: false !global;
 
 // Visual grid colour
-$visual-grid-color: #d5eefb !global;
+$visual-grid-color: #999 !global;
 
-$column: 90px;
-$gutter: 20px;
-$grid-columns: 16;
-$max-width: 1200px;
+// Default Settings
+$column: 		90px;
+$gutter: 		20px;
+$grid-columns: 	16;
+$max-width: 	1200px;
+
+// Breakpoints
+$mobile: 		new-breakpoint(max-width 480px 4);
+$tablet: 		new-breakpoint(max-width 767px 8);
+$desktop:		new-breakpoint(max-width 960px 12);
+$xl-desktop:	new-breakpoint(max-width 1200px 16);

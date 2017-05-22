@@ -10,11 +10,15 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: mitchcanter
 */
 
-
+@import "normalize";
 @import "bourbon";
 @import "grid-settings";
 @import "neat";
+@import "variables";
+@import "base";
+@import "wordpress";
 
 @import "layout";
 @import "header";
 @import "footer";
+@import "page";
