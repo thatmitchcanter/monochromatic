@@ -2,7 +2,12 @@
 @import "neat-helpers";
 
 // Display visual grid
-$visual-grid: false !global;
+$visual-grid: true !global;
 
 // Visual grid colour
 $visual-grid-color: #d5eefb !global;
+
+$column: 90px;
+$gutter: 20px;
+$grid-columns: 16;
+$max-width: 1200px;
