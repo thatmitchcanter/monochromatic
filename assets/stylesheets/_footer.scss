@@ -11,6 +11,13 @@
 		ul:last-child{
 			@include margin(0);
 		}
+		@include media($tablet){
+			@include span-columns(4 of 4);
+			@include margin(0 0 2rem);
+		}
+		@include media($xl-desktop){
+			@include padding(0 2rem);
+		}
 	}	
 } 
 

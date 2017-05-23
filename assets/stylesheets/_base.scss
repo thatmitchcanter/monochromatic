@@ -10,7 +10,7 @@ body {
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 500;
-  font-family: $body;
+  font-family: $body !important;
   color: #222; 
   -webkit-font-smoothing: antialiased;
 }
@@ -64,6 +64,7 @@ input[type="button"] {
   display: inline-block;
   background-color: transparent;
   border-radius: 4px;
+  font-family: $body;
   color: #555;
   text-align: center;
   font-size: 11px;
@@ -127,6 +128,7 @@ select {
   padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
   border-radius: 4px;
   box-shadow: none;
+  font-family: $body;
   background: #fff; }
 /* Removes awkard default styles on some inputs */
 input[type="email"],

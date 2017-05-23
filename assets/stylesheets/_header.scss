@@ -3,6 +3,9 @@
     @include media($tablet){
         text-align: center;
     }
+    @include media($xl-desktop){
+        @include padding(0 2rem);                   
+    }      
     h1{
         font-size: 2rem;
     }

@@ -552,7 +552,7 @@ body {
   /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 500;
-  font-family: "Chivo", chivo, Arial, Helvetica, sans-serif;
+  font-family: "Chivo", Arial, Helvetica, sans-serif !important;
   color: #222;
   -webkit-font-smoothing: antialiased; }
 
@@ -629,6 +629,7 @@ input[type="button"] {
   display: inline-block;
   background-color: transparent;
   border-radius: 4px;
+  font-family: "Chivo", Arial, Helvetica, sans-serif;
   color: #555;
   text-align: center;
   font-size: 11px;
@@ -695,6 +696,7 @@ select {
   /* The 6px vertically centers text on FF, ignored by Webkit */
   border-radius: 4px;
   box-shadow: none;
+  font-family: "Chivo", Arial, Helvetica, sans-serif;
   background: #fff; }
 
 /* Removes awkard default styles on some inputs */
@@ -1049,6 +1051,9 @@ div.wp-caption.alignright .wp-caption-text {
   @media screen and (max-width: 767px) {
     #header {
       text-align: center; } }
+  @media screen and (max-width: 1200px) {
+    #header {
+      padding: 0 2rem; } }
   #header h1 {
     font-size: 2rem; }
   #header .row {
@@ -1123,6 +1128,18 @@ div.wp-caption.alignright .wp-caption-text {
       clear: left; }
     #footer_widgets .widget ul:last-child {
       margin: 0; }
+    @media screen and (max-width: 767px) {
+      #footer_widgets .widget {
+        float: left;
+        display: block;
+        margin-right: 4.7619%;
+        width: 100%;
+        margin: 0 0 2rem; }
+        #footer_widgets .widget:last-child {
+          margin-right: 0; } }
+    @media screen and (max-width: 1200px) {
+      #footer_widgets .widget {
+        padding: 0 2rem; } }
 
 #footer {
   color: #ccc;
@@ -1163,6 +1180,9 @@ div.wp-caption.alignright .wp-caption-text {
         width: 100%; }
         #content #main:last-child {
           margin-right: 0; } }
+    @media screen and (max-width: 1200px) {
+      #content #main {
+        padding: 0 2rem; } }
   #content #side {
     float: left;
     display: block;
@@ -1179,6 +1199,9 @@ div.wp-caption.alignright .wp-caption-text {
         width: 100%; }
         #content #side:last-child {
           margin-right: 0; } }
+    @media screen and (max-width: 1200px) {
+      #content #side {
+        padding: 0 2rem; } }
     #content #side ul#sidebar {
       padding: 0;
       margin: 0; }
