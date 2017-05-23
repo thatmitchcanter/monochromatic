@@ -1,11 +1,11 @@
 <?php
 /**
  * @package WordPress
- * @subpackage monochrome
+ * @subpackage monochromatic
  */
  ?>  
 <section id="content">
-    <?php if ( get_theme_mod( 'monochrome_layout' ) == "right") { ?>
+    <?php if ( get_theme_mod( 'monochromatic_layout' ) == "right") { ?>
     <div class="row">
 	    <aside id="side">
 	        <?php get_template_part( 'sidebar', 'index' ); //the Sidebar ?>
@@ -16,7 +16,7 @@
 	    <!--clearing break-->
 	    <br class="clear" />
 	 </div>
-	<?php } elseif ( get_theme_mod( 'monochrome_layout' ) == "full") { ?>
+	<?php } elseif ( get_theme_mod( 'monochromatic_layout' ) == "full") { ?>
     <div class="row">	
 	    <main id="main">
 	        <?php get_template_part( 'loop', 'index' ); //the Loop ?>

@@ -1,7 +1,7 @@
 <?php
 /**
  * @package WordPress
- * @subpackage monochrome
+ * @subpackage monochromatic
  */
 ?>
 
@@ -9,9 +9,9 @@
 	<div class="row">
 		<div class="logo_container">
 	    <a class="logo" href="<?php echo home_url(); ?>">
-	    <?php if ( get_theme_mod( 'monochrome_logo' ) ) : ?>
+	    <?php if ( get_theme_mod( 'monochromatic_logo' ) ) : ?>
 		    <div class='site-logo'>
-		        <h1 class="remove-bottom site-title"><img class="scale-with-grid" src='<?php echo esc_url( get_theme_mod( 'monochrome_logo' ) ); ?>' alt='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>'></h1>
+		        <h1 class="remove-bottom site-title"><img class="scale-with-grid" src='<?php echo esc_url( get_theme_mod( 'monochromatic_logo' ) ); ?>' alt='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>'></h1>
 		    </div>
 		<?php else : ?>
 		    <h1 class="remove-bottom site-title"><?php bloginfo('title'); ?></h1>
@@ -19,7 +19,7 @@
 		<?php endif; ?>
 	    </a>
 	    </div>
-	    <?php if ( get_theme_mod( 'monochrome_navigation' ) == "header") { ?>
+	    <?php if ( get_theme_mod( 'monochromatic_navigation' ) == "header") { ?>
 			<?php
 			if (has_nav_menu('navigation')) { ?>
 			<nav class="navigation" id="header-nav">

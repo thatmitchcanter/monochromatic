@@ -1,10 +1,10 @@
 <?php
 /**
  * @package WordPress
- * @subpackage monochrome
+ * @subpackage monochromatic
  */
  ?>  
-<?php if ( get_theme_mod( 'monochrome_footer_widgets' ) == "yes") : ?> 
+<?php if ( get_theme_mod( 'monochromatic_footer_widgets' ) == "yes") : ?> 
 	<section id="footer_widgets">
 	<div class="row">
 		<?php if ( is_active_sidebar( 'footer-sidebar' ) ) : ?>

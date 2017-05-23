@@ -1,7 +1,7 @@
 <?php
 /**
  * @package WordPress
- * @subpackage monochrome
+ * @subpackage monochromatic
  */
  
  	/* Meta, Title, Responsive, and Document Setup Tags */

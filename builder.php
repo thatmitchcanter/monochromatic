@@ -3,7 +3,7 @@
  * Template Name: Builder Page
  * Description: Use with Beaver Builder.
  * @package WordPress
- * @subpackage monochrome
+ * @subpackage monochromatic
  */
 
 /* Meta, Title, Responsive, and Document Setup Tags */

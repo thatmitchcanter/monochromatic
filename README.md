@@ -1,4 +1,4 @@
-# Monochrome
+# monochromatic
 
 A WordPress theme used as the foundation for greatness! Built with NPM, Gulp, BrowserSync, Gulp Sass, Bourbon, and Neat.
 
@@ -14,8 +14,8 @@ A WordPress theme used as the foundation for greatness! Built with NPM, Gulp, Br
 
 ### Installation Instructions
 
-1. ``git clone https://github.com/thatmitchcanter/monochrome``
-2. ``cd monochrome``
+1. ``git clone https://github.com/thatmitchcanter/monochromatic``
+2. ``cd monochromatic``
 3. ``npm install``
 4. In ``Gulpfile.js``, set your proxy URL on line 24 to your development URL.
 5. To start developmetn and open a browser window with live-reloading, run ``gulp``

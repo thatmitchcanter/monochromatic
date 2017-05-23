@@ -4,7 +4,7 @@
  * Description: A full-width template with no sidebar
  *
  * @package WordPress
- * @subpackage monochrome
+ * @subpackage monochromatic
  */
 
 /* Meta, Title, Responsive, and Document Setup Tags */

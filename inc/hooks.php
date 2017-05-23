@@ -1,4 +1,4 @@
-<?php function monochrome_before_loop() {  
+<?php function monochromatic_before_loop() {  
 
 	if (is_archive()) { ?>
 
@@ -20,6 +20,6 @@
 
 }
 
-function monochrome_after_loop() {
+function monochromatic_after_loop() {
 
 }

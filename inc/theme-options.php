@@ -1,148 +1,148 @@
 <?php
-add_action('customize_register', 'monochrome_header_customize');
-add_action('customize_register', 'monochrome_layout_customize');
-add_action('customize_register', 'monochrome_post_customize');
-add_action('customize_register', 'monochrome_home_customize');
+add_action('customize_register', 'monochromatic_header_customize');
+add_action('customize_register', 'monochromatic_layout_customize');
+add_action('customize_register', 'monochromatic_post_customize');
+add_action('customize_register', 'monochromatic_home_customize');
 
-function monochrome_header_customize($wp_customize) {
+function monochromatic_header_customize($wp_customize) {
  
-    $wp_customize->add_section( 'monochrome_header_settings', array(
-		'title'           => __('Header Options', 'monochrome' ),         
+    $wp_customize->add_section( 'monochromatic_header_settings', array(
+		'title'           => __('Header Options', 'monochromatic' ),         
         'priority'        => 35,
-        'description'     => __('Set options for content located in the header (logo upload, etc).', 'monochrome' ),
+        'description'     => __('Set options for content located in the header (logo upload, etc).', 'monochromatic' ),
     ) );
  
-    $wp_customize->add_setting( 'monochrome_logo', array(
+    $wp_customize->add_setting( 'monochromatic_logo', array(
     ) );
  
-    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'monochrome_logo', array(
-        'label'   => __('Upload Logo', 'monochrome' ),
-        'section' => 'monochrome_header_settings',
-        'settings'   => 'monochrome_logo',
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'monochromatic_logo', array(
+        'label'   => __('Upload Logo', 'monochromatic' ),
+        'section' => 'monochromatic_header_settings',
+        'settings'   => 'monochromatic_logo',
     ) ) ); 
  
 	if ( $wp_customize->is_preview() && ! is_admin() )
-	    add_action( 'wp_footer', 'monochrome_customize_preview', 21);
+	    add_action( 'wp_footer', 'monochromatic_customize_preview', 21);
 }
 
-function monochrome_home_customize($wp_customize) {
+function monochromatic_home_customize($wp_customize) {
  
-    $wp_customize->add_section( 'monochrome_home_settings', array(
-        'title'           => __('Homepage Options', 'monochrome' ),         
+    $wp_customize->add_section( 'monochromatic_home_settings', array(
+        'title'           => __('Homepage Options', 'monochromatic' ),         
         'priority'        => 36,
-        'description'     => __('Set options for the home page.', 'monochrome' ),
+        'description'     => __('Set options for the home page.', 'monochromatic' ),
     ) );
  
-    $wp_customize->add_setting( 'monochrome_post_excerpt', array(
+    $wp_customize->add_setting( 'monochromatic_post_excerpt', array(
          'default'        => 'short',        
     ) );    
 
-    $wp_customize->add_control( 'monochrome_post_excerpt', array(
-        'label'   => __('Excerpt Length', 'monochrome' ),
-        'section' => 'monochrome_home_settings',
+    $wp_customize->add_control( 'monochromatic_post_excerpt', array(
+        'label'   => __('Excerpt Length', 'monochromatic' ),
+        'section' => 'monochromatic_home_settings',
         'type'    => 'select',
         'choices'    => array(
-            'short' => __('Short', 'monochrome' ),     
-            'medium' => __('Medium', 'monochrome' ),               
-            'long' => __('Long', 'monochrome' ), 
-            'full' => __('Full Post', 'monochrome' ),
+            'short' => __('Short', 'monochromatic' ),     
+            'medium' => __('Medium', 'monochromatic' ),               
+            'long' => __('Long', 'monochromatic' ), 
+            'full' => __('Full Post', 'monochromatic' ),
             ),
     ) );    
 
 }
 
-function monochrome_layout_customize($wp_customize) {
+function monochromatic_layout_customize($wp_customize) {
  
-    $wp_customize->add_section( 'monochrome_layout_settings', array(
-        'title'          => __('Layout Options', 'monochrome' ),
+    $wp_customize->add_section( 'monochromatic_layout_settings', array(
+        'title'          => __('Layout Options', 'monochromatic' ),
         'priority'       => 37,
-        'description'     => __('Set options for how various content regions are displayed.', 'monochrome' ),        
+        'description'     => __('Set options for how various content regions are displayed.', 'monochromatic' ),        
     ) );
 
-    $wp_customize->add_setting( 'monochrome_layout', array(
+    $wp_customize->add_setting( 'monochromatic_layout', array(
          'default'        => 'left',        
     ) );    
 
-	$wp_customize->add_control( 'monochrome_layout', array(
-	    'label'   => __('Preferred Layout', 'monochrome' ),
-        'section' => 'monochrome_layout_settings',
+	$wp_customize->add_control( 'monochromatic_layout', array(
+	    'label'   => __('Preferred Layout', 'monochromatic' ),
+        'section' => 'monochromatic_layout_settings',
 	    'type'    => 'select',
 	    'choices'    => array(
-	        'left' => __('Left Content', 'monochrome' ),    	
-	        'right' => __('Right Content', 'monochrome' ),
-	        'full' => __('Full Width', 'monochrome' ),
+	        'left' => __('Left Content', 'monochromatic' ),    	
+	        'right' => __('Right Content', 'monochromatic' ),
+	        'full' => __('Full Width', 'monochromatic' ),
 	        ),
 	) );    
 
-    $wp_customize->add_setting( 'monochrome_footer_widgets', array(
+    $wp_customize->add_setting( 'monochromatic_footer_widgets', array(
          'default'        => 'yes',        
     ) );    
 
-    $wp_customize->add_control( 'monochrome_footer_widgets', array(
-        'label'   => __('Use Footer Widgets?', 'monochrome' ),
-        'section' => 'monochrome_layout_settings',
+    $wp_customize->add_control( 'monochromatic_footer_widgets', array(
+        'label'   => __('Use Footer Widgets?', 'monochromatic' ),
+        'section' => 'monochromatic_layout_settings',
         'type'    => 'select',
         'choices'    => array(
-            'yes' => __('Yes', 'monochrome' ),      
-            'no' => __('No', 'monochrome' ),
+            'yes' => __('Yes', 'monochromatic' ),      
+            'no' => __('No', 'monochromatic' ),
             ),
     ) );  
 
-    $wp_customize->add_setting( 'monochrome_navigation', array(
+    $wp_customize->add_setting( 'monochromatic_navigation', array(
          'default'        => 'header',        
     ) );    
 
-    $wp_customize->add_control( 'monochrome_navigation', array(
-        'label'   => __('Navigation Setting', 'monochrome' ),
-        'section' => 'monochrome_layout_settings',
+    $wp_customize->add_control( 'monochromatic_navigation', array(
+        'label'   => __('Navigation Setting', 'monochromatic' ),
+        'section' => 'monochromatic_layout_settings',
         'type'    => 'select',
         'choices'    => array(
-            'header' => __('In Header', 'monochrome' ),      
-            'navbar' => __('Navigation Bar', 'monochrome' ),
+            'header' => __('In Header', 'monochromatic' ),      
+            'navbar' => __('Navigation Bar', 'monochromatic' ),
             ),
     ) );            
  
 }
 
-function monochrome_post_customize($wp_customize) {
+function monochromatic_post_customize($wp_customize) {
  
-    $wp_customize->add_section( 'monochrome_post_settings', array(
-        'title'          => __('Post Options', 'monochrome' ),
+    $wp_customize->add_section( 'monochromatic_post_settings', array(
+        'title'          => __('Post Options', 'monochromatic' ),
         'priority'       => 38,
-        'description'     => __('Set options for the post related content and meta.', 'monochrome' ),                
+        'description'     => __('Set options for the post related content and meta.', 'monochromatic' ),                
     ) );
 
-    $wp_customize->add_setting( 'monochrome_tags', array(
+    $wp_customize->add_setting( 'monochromatic_tags', array(
     	'default' => 'yes'
     ) );    
 
-	$wp_customize->add_control( 'monochrome_tags', array(
-	    'label'   => __('Use Tags in Post?', 'monochrome' ),
-        'section' => 'monochrome_post_settings',
+	$wp_customize->add_control( 'monochromatic_tags', array(
+	    'label'   => __('Use Tags in Post?', 'monochromatic' ),
+        'section' => 'monochromatic_post_settings',
 	    'type'    => 'select',
 	    'choices'    => array(
-	        'yes' => __('Yes', 'monochrome' ),    	
-	        'no' => __('No', 'monochrome' ),
+	        'yes' => __('Yes', 'monochromatic' ),    	
+	        'no' => __('No', 'monochromatic' ),
 	        ),
 	) );    
 
-    $wp_customize->add_setting( 'monochrome_featured_image', array(
+    $wp_customize->add_setting( 'monochromatic_featured_image', array(
         'default' => 'no'
     ) );    
 
-    $wp_customize->add_control( 'monochrome_featured_image', array(
-        'label'   => __('Display Featured Image in Post?', 'monochrome' ),
-        'section' => 'monochrome_post_settings',
+    $wp_customize->add_control( 'monochromatic_featured_image', array(
+        'label'   => __('Display Featured Image in Post?', 'monochromatic' ),
+        'section' => 'monochromatic_post_settings',
         'type'    => 'select',
         'choices'    => array(
-            'no' => __('No', 'monochrome' ),            
-            'yes' => __('Yes', 'monochrome' ),        
+            'no' => __('No', 'monochromatic' ),            
+            'yes' => __('Yes', 'monochromatic' ),        
             ),
     ) );        
  
 }
 
-function monochrome_customize_preview() { ?>
+function monochromatic_customize_preview() { ?>
     <script type="text/javascript">
     ( function( $ ){
     wp.customize('blogname',function( value ) {
