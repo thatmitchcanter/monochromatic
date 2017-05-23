@@ -17,10 +17,14 @@
   },
   "homepage": "https://github.com/MeredithU/gulp-sass-bourbon-neat-boilerplate#readme",
   "devDependencies": {
-    "gulp": "^3.9.0",
     "browser-sync": "^2.11.1",
+    "gulp": "^3.9.0",
     "gulp-sass": "^2.1.1",
     "node-bourbon": "^4.2.3",
-    "node-neat": "^1.7.2"
+    "node-neat": "^1.7.2",
+    "node-normalize-scss": "^3.0.0"
+  },
+  "dependencies": {
+    "normalize.css": "^7.0.0"
   }
 }

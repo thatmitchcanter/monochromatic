@@ -1,3 +1,19 @@
+#footer_widgets{
+	background: #111;
+	@include padding(2rem 0 3rem);
+	color: white;
+	.row{
+		@include outer_container();
+	}
+	.widget{
+		@include span-columns(4 of 12);
+		@include omega(3n);
+		ul:last-child{
+			@include margin(0);
+		}
+	}	
+} 
+
 #footer{
 	color: $light;
 	background: $dark-grey;

@@ -1,11 +1,12 @@
 "use strict";
 
-var gulp = require("gulp"),
-browserSync = require("browser-sync"),
-sass = require("gulp-sass"),
-bourbon = require("node-bourbon").includePaths,
-neat = require("node-neat").includePaths;
-var reload      = browserSync.reload;
+var gulp 		= 			require("gulp"),
+browserSync 	= 			require("browser-sync"),
+sass 			= 			require("gulp-sass"),
+bourbon 		= 			require("node-bourbon").includePaths,
+neat 			= 			require("node-neat").includePaths,
+normalize 		=			require('node-normalize-scss').includePaths;
+var reload      = 			browserSync.reload;
 
 // Compiles all gulp tasks
 gulp.task("default", ["watch"]);
@@ -30,7 +31,7 @@ gulp.task("sass", function() {
 	gulp.src("assets/stylesheets/**/*.scss")
 	.pipe(sass({
 		includePaths: bourbon,
-		includePaths: neat
+		includePaths: neat,
 	}))
 	.pipe(gulp.dest("."))
 	.pipe(browserSync.stream());

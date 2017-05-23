@@ -86,7 +86,21 @@ function downbeat_layout_customize($wp_customize) {
             'yes' => __('Yes', 'downbeat' ),      
             'no' => __('No', 'downbeat' ),
             ),
-    ) );        
+    ) );  
+
+    $wp_customize->add_setting( 'downbeat_navigation', array(
+         'default'        => 'header',        
+    ) );    
+
+    $wp_customize->add_control( 'downbeat_navigation', array(
+        'label'   => __('Navigation Setting', 'downbeat' ),
+        'section' => 'downbeat_layout_settings',
+        'type'    => 'select',
+        'choices'    => array(
+            'header' => __('In Header', 'downbeat' ),      
+            'navbar' => __('Navigation Bar', 'downbeat' ),
+            ),
+    ) );            
  
 }
 
