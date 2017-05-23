@@ -10,7 +10,7 @@ A WordPress theme used as the foundation for greatness! Built with NPM, Gulp, Br
 4. [Gulp Sass](https://www.npmjs.com/package/gulp-sass)
 5. [Bourbon](http://bourbon.io/)
 6. [Neat](http://neat.bourbon.io/)
-7. Basic SCSS and WordPres styles, meant to be built upon.
+7. Basic SCSS and WordPress styles, meant to be built upon.
 
 ### Installation Instructions
 
