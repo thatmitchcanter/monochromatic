@@ -553,7 +553,8 @@ body {
   line-height: 1.6;
   font-weight: 500;
   font-family: "Chivo", chivo, Arial, Helvetica, sans-serif;
-  color: #222; }
+  color: #222;
+  -webkit-font-smoothing: antialiased; }
 
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -896,7 +897,8 @@ a.logo {
       width: 100%; }
       .navigation .menu ul li a {
         display: block;
-        width: 100%; }
+        width: 100%;
+        color: white; }
       .navigation .menu ul li:hover ul {
         left: auto; }
   .navigation .menu li:hover ul {
