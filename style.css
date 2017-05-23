@@ -881,19 +881,16 @@ a.logo {
   padding: 0;
   list-style: none;
   position: relative; }
-
-.menu li {
-  display: block;
-  float: left; }
-
-.menu a {
-  padding: 12px;
-  text-decoration: none;
-  display: block; }
-
-.menu a:hover {
-  background: black;
-  color: white; }
+  .menu li {
+    display: block;
+    float: left; }
+  .menu a {
+    padding: 12px;
+    text-decoration: none;
+    display: block; }
+    .menu a:hover {
+      background: black;
+      color: white; }
 
 .navigation {
   height: 46px !important;
@@ -993,11 +990,9 @@ img {
 
 div.wp-caption .wp-caption-text {
   padding-right: 10px; }
-
-div.wp-caption.alignright img[class*="wp-image-"],
-div.wp-caption.alignright .wp-caption-text {
-  padding-left: 10px;
-  padding-right: 0; }
+  div.wp-caption .wp-caption-text.alignright img[class*="wp-image-"], div.wp-caption .wp-caption-text.alignright .wp-caption-text {
+    padding-left: 10px;
+    padding-right: 0; }
 
 .gallery-caption {
   background-color: rgba(0, 0, 0, 0.7);

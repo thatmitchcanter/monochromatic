@@ -2,8 +2,16 @@
 ================================================== */
 
 /*===Header Styles===*/
-.site-title { margin-top: 2rem; line-height: initial; margin-bottom: .5rem; }
-.site-description{margin-bottom: .25rem;}
+.site-title {
+	margin-top: 2rem;
+	line-height: initial;
+	margin-bottom: .5rem;
+}
+
+.site-description{
+	margin-bottom: .25rem;
+}
+
 a.logo{
 	text-decoration: none;
 	h5{
@@ -13,10 +21,25 @@ a.logo{
 
 /*===Menu Styles===*/
 
-.menu{margin: 0 !important; padding: 0; list-style: none;position: relative}
-.menu li{display: block; float: left}
-.menu a{padding: 12px; text-decoration: none;display: block;}
-.menu a:hover{background: black;color: white}
+.menu{
+	margin: 0 !important;
+	padding: 0; list-style:
+	none;position: relative;
+	li{
+		display: block;
+		float: left
+	}
+	a{
+		padding: 12px;
+		text-decoration: none;
+		display: block;
+		&:hover{
+			background: black;
+			color: white
+		}
+	}
+}
+
 .navigation {
 	height: 46px !important;
 	margin-bottom: 2rem;
@@ -122,10 +145,16 @@ img{
 }
 
 .wp-caption-text { -webkit-box-sizing: border-box; -moz-box-sizing:    border-box; box-sizing: border-box; font-size: 12px; font-style: italic; line-height: 1.5; margin: 9px 0; }
-div.wp-caption .wp-caption-text { padding-right: 10px; }
-div.wp-caption.alignright img[class*="wp-image-"],
-div.wp-caption.alignright .wp-caption-text {
-	padding-left: 10px; padding-right: 0;
+div.wp-caption{
+	.wp-caption-text{
+		padding-right: 10px;
+		&.alignright{
+			img[class*="wp-image-"],.wp-caption-text{
+				padding-left: 10px;
+				padding-right: 0;
+			}
+		}
+	}
 }
 
 .gallery-caption {
