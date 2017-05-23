@@ -2,6 +2,10 @@
 
 A WordPress theme used as the foundation for greatness! Built with NPM, Gulp, BrowserSync, Gulp Sass, Bourbon, and Neat.
 
+### Demo
+
+Visit [the demo site](http://monochrome.mitchcanter.com/) to see a working demo. Remember, though - this is supposed to be a theme that is built upon, not used out of the box (unless you like that sort of thing!).
+
 ### Included
 
 1. [npm](https://www.npmjs.com/)
@@ -11,6 +15,9 @@ A WordPress theme used as the foundation for greatness! Built with NPM, Gulp, Br
 5. [Bourbon](http://bourbon.io/)
 6. [Neat](http://neat.bourbon.io/)
 7. Basic SCSS and WordPress styles, meant to be built upon.
+8. Builder Page Template for use with Page Builders (Beaver Builder, etc).
+9. Full Width Template
+10. Various WordPress Layout Settings in the Customizer!
 
 ### Installation Instructions
 
