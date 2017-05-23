@@ -1,7 +1,7 @@
 <?php
 /**
  * @package WordPress
- * @subpackage Downbeat
+ * @subpackage monochrome
  */
  
  	/* Meta, Title, Responsive, and Document Setup Tags */

@@ -1,4 +1,4 @@
-<?php function downbeat_before_loop() {  
+<?php function monochrome_before_loop() {  
 
 	if (is_archive()) { ?>
 
@@ -20,6 +20,6 @@
 
 }
 
-function downbeat_after_loop() {
+function monochrome_after_loop() {
 
 }

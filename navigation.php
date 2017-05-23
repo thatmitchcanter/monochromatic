@@ -1,9 +1,9 @@
 <?php
 /**
  * @package WordPress
- * @subpackage Downbeat
+ * @subpackage monochrome
  */
-if ( get_theme_mod( 'downbeat_navigation' ) == "navbar") {
+if ( get_theme_mod( 'monochrome_navigation' ) == "navbar") {
 	if (has_nav_menu('navigation')) { ?>
 	<nav class="navigation" id="nav">
 	<div class="row">

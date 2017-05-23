@@ -1,11 +1,11 @@
 <?php 
 /**
  * @package WordPress
- * @subpackage Downbeat
+ * @subpackage monochrome
  */
-add_action( 'after_setup_theme', 'downbeat_theme_setup' );
+add_action( 'after_setup_theme', 'monochrome_theme_setup' );
 
-function downbeat_theme_setup() {
+function monochrome_theme_setup() {
 
 	/* Content Width */
 	if ( ! isset( $content_width ) ) $content_width = 1200;
@@ -26,28 +26,28 @@ function downbeat_theme_setup() {
 	/* Allows for shortcodes in widgets */
 	add_filter('widget_text', 'do_shortcode');	
 
-	add_action( 'widgets_init', 'downbeat_register_right_sidebars' );
-	add_action( 'widgets_init', 'downbeat_register_footer_sidebars' );
-	add_filter('dynamic_sidebar_params','downbeat_widget_first_last_classes');
+	add_action( 'widgets_init', 'monochrome_register_right_sidebars' );
+	add_action( 'widgets_init', 'monochrome_register_footer_sidebars' );
+	add_filter('dynamic_sidebar_params','monochrome_widget_first_last_classes');
 
 	/* Add Theme Editor to Admin Bar (to save time!) */
-	add_action( 'admin_bar_menu', 'downbeat_admin_bar_theme_editor_option', 100 );
+	add_action( 'admin_bar_menu', 'monochrome_admin_bar_theme_editor_option', 100 );
 
 	/* Customized Comment Display */
-	if ( ! function_exists( 'downbeat_comments' ) ) :
-		function downbeat_comments($comment, $args, $depth) {
+	if ( ! function_exists( 'monochrome_comments' ) ) :
+		function monochrome_comments($comment, $args, $depth) {
 		$GLOBALS['comment'] = $comment; ?>
 		<li <?php comment_class(); ?> id="li-comment-<?php comment_ID() ?>">
 			<div id="comment-<?php comment_ID(); ?>" class="single-comment clearfix">
 				<div class="comment-author vcard"> <?php echo get_avatar($comment,$size='64'); ?></div>
 				<div class="comment-meta commentmetadata">
 					<?php if ($comment->comment_approved == '0') : ?>
-					<em><?php _e('Comment is awaiting moderation','downbeat');?></em> <br />
+					<em><?php _e('Comment is awaiting moderation','monochrome');?></em> <br />
 					<?php endif; ?>
-					<h6><?php echo __('By','downbeat').' '.get_comment_author_link(). ' '. get_comment_date(). '  -  ' . get_comment_time(); ?></h6>
+					<h6><?php echo __('By','monochrome').' '.get_comment_author_link(). ' '. get_comment_date(). '  -  ' . get_comment_time(); ?></h6>
 					<?php comment_text() ?>
-					<?php edit_comment_link(__('Edit comment','downbeat'),'  ',''); ?>
-					<?php comment_reply_link(array_merge( $args, array('reply_text' => __('Reply','downbeat'),'depth' => $depth, 'max_depth' => $args['max_depth']))); ?>
+					<?php edit_comment_link(__('Edit comment','monochrome'),'  ',''); ?>
+					<?php comment_reply_link(array_merge( $args, array('reply_text' => __('Reply','monochrome'),'depth' => $depth, 'max_depth' => $args['max_depth']))); ?>
 				</div>
 			</div>
 			<!-- </li> -->
@@ -57,7 +57,7 @@ function downbeat_theme_setup() {
 }
 
 /* Right Sidebar Setup */
-function downbeat_register_right_sidebars() { 
+function monochrome_register_right_sidebars() { 
 	register_sidebar(array(
 	  'name' => 'Right Sidebar',
 	  'id' => 'right-sidebar',
@@ -70,7 +70,7 @@ function downbeat_register_right_sidebars() {
 }
 
 /* Footer Widgets Sidebar Setup */
-function downbeat_register_footer_sidebars() {
+function monochrome_register_footer_sidebars() {
 	register_sidebar(array(
 	  'name' => 'Footer Sidebar',
 	  'id' => 'footer-sidebar',
@@ -84,7 +84,7 @@ function downbeat_register_footer_sidebars() {
 
 /* Add "first" and "last" CSS classes to dynamic sidebar widgets. */
 /* Also adds numeric index class for each widget (widget-1, widget-2, etc.) */
-function downbeat_widget_first_last_classes($params) {
+function monochrome_widget_first_last_classes($params) {
 
 	global $my_widget_num; // Global a counter array
 	$this_id = $params[0]['id']; // Get the id for the current sidebar we're processing
@@ -119,13 +119,13 @@ function downbeat_widget_first_last_classes($params) {
 }
 
 /* Adds Edit Theme to Bar */
-function downbeat_admin_bar_theme_editor_option() {  
+function monochrome_admin_bar_theme_editor_option() {  
 	global $wp_admin_bar;   
 	if ( !is_super_admin() || !is_admin_bar_showing() )      
 	return;    
 	$wp_admin_bar->add_menu(        
 		array( 'id' => 'edit-theme',            
-		'title' => __("Edit Theme", 'downbeat'),           
+		'title' => __("Edit Theme", 'monochrome'),           
 		'href' => '' . home_url() . '/wp-admin/theme-editor.php'        
 	)    
 	);
@@ -134,5 +134,5 @@ function downbeat_admin_bar_theme_editor_option() {
 /* Theme Options Panel */
 require_once ( get_template_directory() . '/inc/theme-options.php' );
 
-/* Downbeat Hooks */
+/* monochrome Hooks */
 require_once ( get_template_directory() . '/inc/hooks.php' );
