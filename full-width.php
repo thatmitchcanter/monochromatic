@@ -17,19 +17,16 @@ get_template_part( 'top', 'index' );
 get_template_part( 'menu', 'index' ); ?>
     
 <section id="content">
-<div class="container">
-	<div class="sixteen columns alpha omega">
 	<div class="row">
-		<div id="primary" class="full-width">
+		<main id="primary" class="full-width">
 			<div id="full_content">
 
 				<?php get_template_part( 'loop', 'index' ); //the Loop ?>
 
 			</div><!-- #full_content -->
-		</div><!-- #primary -->
+		</main><!-- #primary -->
 	</div>  
-	</div>        
-</div>
+
 </section>
 <?php
 /* Lower Footer Widgets (#footer_widgets) */                 
