@@ -10,6 +10,8 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: mitchcanter
 */
 
+$output-bourbon-deprecation-warnings: false;
+
 @import "normalize";
 @import "bourbon";
 @import "grid-settings";

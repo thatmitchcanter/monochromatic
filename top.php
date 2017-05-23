@@ -22,7 +22,7 @@
 	    <?php if ( get_theme_mod( 'downbeat_navigation' ) == "header") { ?>
 			<?php
 			if (has_nav_menu('navigation')) { ?>
-			<nav class="navigation" id="nav">
+			<nav class="navigation" id="header-nav">
 				  <?php wp_nav_menu( array( 'theme_location' => 'navigation' ) ); ?>
 				  <br class="clear" />
 			</nav>

@@ -1,7 +1,7 @@
 #content{
     @include outer-container();
     #main{
-    	@include span-columns(12 of 16);
+    	@include span-columns(8 of 12);
     	@include media($tablet) {
 	    	@include span-columns(4 of 4);	
         }
@@ -10,7 +10,7 @@
     	}  
     }
     #side{
-    	@include span-columns(4 of 16);
+    	@include span-columns(4 of 12);
     	@include omega;
     	@include media($tablet) {
 	    	@include span-columns(4 of 4);	
@@ -21,6 +21,7 @@
     	ul#sidebar{
     		@include padding(0);
     		@include margin(0);
+            
        	}
     }
 }

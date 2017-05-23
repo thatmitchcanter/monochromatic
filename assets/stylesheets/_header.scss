@@ -1,11 +1,18 @@
 #header{
+    height: 6rem;
     background: $dark-grey;
     @include media($tablet){
         text-align: center;
     }
     @include media($xl-desktop){
         @include padding(0 2rem);                   
-    }      
+    }   
+    .site-logo{
+        img {
+            width: auto;
+            max-height: 25px;
+        }
+    }   
     h1{
         font-size: 2rem;
     }
@@ -35,5 +42,12 @@
                 }
             }
         }
+    }
+}
+
+#nav{
+    background: #111;
+    .row{
+        @include outer-container();
     }
 }

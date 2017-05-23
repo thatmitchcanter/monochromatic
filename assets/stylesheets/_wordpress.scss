@@ -18,7 +18,7 @@ a.logo{
 .menu a{padding: 12px; text-decoration: none;display: block;}
 .menu a:hover{background: black;color: white}
 .navigation {
-	height: 42px !important;
+	height: 46px !important;
 	margin-bottom: 2rem;
 	.menu{
 		ul{
@@ -26,6 +26,7 @@ a.logo{
 			z-index: 9999;
 			width: 100%;
 			position: absolute;
+			max-width: 16rem;
 			left: -999em;
 			margin: 0;
 			padding: 0px !important;
@@ -63,12 +64,13 @@ a.title-link{text-decoration: none}
 .aligncenter{display: block; margin-left: auto; margin-right: auto;}
 code, pre{font-family: Courier New, Courier, Monospaced}
 .post{
-	section{
+	@include margin(0 0 5rem 0);
+	section.post-meta{
 		p{
 			@include margin(0);
 		}
 	}
-	&:not(:last-child){
+	&:last-child{
 		@include margin(0);
 	}
 }
@@ -84,14 +86,25 @@ img{
 }
 
 /*===Sidebar Styles===*/
-#sidebar{
-	li.widget{
+#sidebar,
+#footer_widgets{
+	.widget{
 		list-style: none;
-		margin-bottom: 2rem;
 		h4.widgettitle{
-			font-weight: bold;
+			font-weight: normal;
 			margin-bottom: 1rem;
 		}		
+		ul{
+			@include margin(1.5rem 0);	
+			font-size: 1.5rem;	
+			line-height: 125%;	
+		}
+	}
+}
+
+#sidebar{
+	.widget{
+		margin-bottom: 3rem;
 	}
 }
 
