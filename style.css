@@ -973,7 +973,7 @@ img {
 #sidebar .widget {
   margin-bottom: 3rem; }
 
-/*===Sidebar Styles===*/
+/*===Captions===*/
 .wp-caption {
   color: #767676;
   max-width: 100%;
@@ -1017,6 +1017,7 @@ div.wp-caption.alignright .wp-caption-text {
   text-align: left;
   width: 100%; }
 
+/*===Comments Styles===*/
 #comments {
   margin-top: 5rem; }
   #comments ul.commentlist {
@@ -1066,6 +1067,26 @@ div.wp-caption.alignright .wp-caption-text {
       background: #f6f6f6; }
     #comments ul.commentlist li.parent {
       border-left: 5px solid #ddd; }
+
+/*===Pagination Styles===*/
+#pagination {
+  text-align: center;
+  margin: 0 0 5rem; }
+  #pagination span {
+    border: 1px solid #aaa;
+    padding: .2rem .6rem;
+    margin: 0 0.3rem; }
+    #pagination span.current {
+      background: #222;
+      color: white;
+      border-color: #222; }
+  #pagination a:not(.next):not(.prev) {
+    border: 1px solid #aaa;
+    padding: .2rem .6rem;
+    margin: 0 0.3rem; }
+  #pagination a.next,
+  #pagination a.prev {
+    margin: 0 0.3rem; }
 
 #content {
   padding: 4rem 0 5rem; }

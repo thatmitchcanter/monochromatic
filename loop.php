@@ -46,9 +46,19 @@
 
 <?php /* Display navigation to next/previous pages when applicable */ ?>
 <?php if (  $wp_query->max_num_pages > 1 ) : ?>
-	<nav id="nav-below">
-		<div class="nav-previous"><?php next_posts_link(); ?></div>
-		<div class="nav-next"><?php previous_posts_link(); ?></div>
+	<nav id="pagination">
+		<?php
+		global $wp_query;
+
+		$big = 999999999; // need an unlikely integer
+
+		echo paginate_links( array(
+			'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
+			'format' => '?paged=%#%',
+			'current' => max( 1, get_query_var('paged') ),
+			'total' => $wp_query->max_num_pages
+		) );
+		?>
 	</nav><!-- #nav-below -->
 <?php endif; ?>
 
