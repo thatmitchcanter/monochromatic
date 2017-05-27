@@ -29,4 +29,4 @@ Visit [the demo site](http://monochrome.mitchcanter.com/) to see a working demo.
 
 ### About The Author
 
-[Mitch Canter](http://www.mitchcanter.me) is a digital strategist and WordPress developer from Franklin, TN.
+[Mitch Canter](http://www.mitchcanter.me) is a digital strategist and WordPress developer from Franklin, TN.  He loves poking around the inside of a WordPress site, and (sometimes) he can even find out what's wrong.  He lives in Franklin with his four kids and amazing wife.
