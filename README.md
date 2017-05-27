@@ -25,4 +25,4 @@ Visit [the demo site](http://monochrome.mitchcanter.com/) to see a working demo.
 2. ``cd monochromatic``
 3. ``npm install``
 4. In ``Gulpfile.js``, set your proxy URL on line 24 to your development URL.
-5. To start developmetn and open a browser window with live-reloading, run ``gulp``
+5. To start development and open a browser window with live-reloading, run ``gulp``
