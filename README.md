@@ -26,3 +26,7 @@ Visit [the demo site](http://monochrome.mitchcanter.com/) to see a working demo.
 3. ``npm install``
 4. In ``Gulpfile.js``, set your proxy URL on line 24 to your development URL.
 5. To start development and open a browser window with live-reloading, run ``gulp``
+
+### About The Author
+
+[Mitch Canter](http://www.mitchcanter.me) is a digital strategist and WordPress developer from Franklin, TN.
